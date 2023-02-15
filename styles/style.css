@@ -67,6 +67,7 @@ body {
 .page-header__navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-grow: 1;
 
 }
@@ -80,6 +81,9 @@ body {
   padding: 0;
 
 }
+.page-navigation__item {
+  padding: 20px 16px;
+}
 .page-navigation__link {
   font-size: 20px;
   line-height: 24px;
@@ -90,6 +94,7 @@ body {
   text-align: center;
 }
 .icon {
+  padding: 22px 12px ;
   text-decoration: none;
   outline: none;
 }
@@ -111,12 +116,15 @@ url(../images/index-background.jpg) no-repeat top;
 
 background-size: 100% auto;
 text-align: center;
-margin-bottom: 70px;
+padding-top: 50px;
+padding-bottom: 80px;
+
 }
 .main-container {
   flex-grow: 1;
 }
 .button {
+  font-family: "PT Sans", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   color:#ffffff;
@@ -160,12 +168,13 @@ margin-bottom: 70px;
 }
 .main-tagline {
   margin-top: 0;
-  margin-bottom: 65px;
+  margin-bottom: 69px;
   font-size: 22px;
   line-height: 26px;
 }
 .advantage {
   text-align: center;
+  padding-top: 70px;
 }
 .advantage__list {
   display: flex;
@@ -173,9 +182,14 @@ margin-bottom: 70px;
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 64px;
+
 
 }
+.advantage__item {
+  background-color:rgba(131, 179, 211, 0.12);
+  color: #333333;
+}
+
 
 
 .advantage__block {
@@ -184,22 +198,19 @@ margin-bottom: 70px;
 }
 .advantage__text {
   width: 230px;
-  padding-left: 85px;
-  padding-right: 85px;
+  padding: 102px 85px;
+
 }
 
-.advantage__item-town, .advantage__item-bridge {
+.advantage__item-image {
   display: flex;
 }
-.advantage__item-square, .advantage__item-tourist {
-  background-color:rgba(131, 179, 211, 0.12);
-  color: #333333;
-}
-.advantage__item-road {
+
+.advantage__item:nth-child(3n+3) {
  background-color: rgba(131, 179, 211, 0.2);
- color: #333333;
 }
 .advantage__title {
+  margin-top: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -207,10 +218,15 @@ margin-bottom: 70px;
 }
 .services {
   text-align: center;
-  margin-bottom: 96px;
+  padding-top: 64px;
+
 }
 .services__item {
+  background-color: rgba(131, 179, 211, 0.12);
   padding: 81px 85px;
+}
+.services__item:nth-child(3n+2) {
+  background-color: #ffffff;
 }
 
 .services__image {
@@ -236,10 +252,6 @@ margin-bottom: 70px;
   display: flex;
 }
 
-
-.services__item-housing, .services__item-souvenirs{
-  background-color: rgba(131, 179, 211, 0.12);
-}
 .image-housing {
   display: inline-block;
   background-image: url(../images/home.svg);
@@ -263,7 +275,8 @@ margin-bottom: 70px;
 }
 .main-index__search {
   text-align: center;
-  margin-bottom: 70px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .search__tagline {
   width: 592px;
@@ -346,10 +359,7 @@ margin-bottom: 70px;
   text-decoration: none;
   color:#000000;
 }
-.catalog {
-  margin-top: -5px;
 
-}
 .catalog__heading {
   font-weight: 700;
   font-size: 60px;
@@ -506,24 +516,77 @@ margin-bottom: 70px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.catalog__item-cart {
+  min-height: 398px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.catalog__item-image {
+ width: 100%;
+}
 .catalog__item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
+}
+.catalog__price {
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+}
+.catalog__item-name {
+  margin: 0;
+}
+.catalog__item-price {
+  margin: 0;
+}
+.catalog__buttons {
+  display: flex;
+  justify-content: center;
+}
+.catalog__item-button {
+  padding: 8px 26px;
+
 }
 .catalog__item-detailed {
-  padding: 8px 26px;
   margin-right: 20px;
 }
 .catalog__item-favorite {
-  padding: 9px 20px;
+  padding: 8px 20px;
 }
-.catalog__rating {
+.catalog__rate {
+  display: flex;
+  justify-content: space-between;
+}
 
-  font-size: 14px;
+.catalog__rating {
+  margin: 0;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  border-radius: 4px;
+  padding: 9px 22px 8px 23px;
+  background-color: #F2F2F2;
+  color: #333333;
+}
+.catalog__item-stars {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.star {
+  margin-right: 6px;
+  background: url(../images/star.png) no-repeat;
+
+  width: 18px;
+  height: 17px;
 }
 .paganation {
   list-style: none;
