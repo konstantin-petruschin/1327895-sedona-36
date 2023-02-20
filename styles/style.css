@@ -336,7 +336,7 @@ padding-bottom: 80px;
 .page-footer {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 .socials__list {
   list-style: none;
@@ -369,6 +369,7 @@ padding-bottom: 80px;
 }
 .catalog__title {
   text-align: left;
+  margin-bottom: 0;
 }
 .catalog__filter {
   display: flex;
@@ -482,13 +483,16 @@ padding-bottom: 80px;
 .catalog__results {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 40px;
 
 }
 .found__select {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  height: 49px;
+  margin-right: 70px;
+  width: 292px;
+  padding: 15px;
 }
 .found__select:hover {
   border: 2px solid #68A2CA;
@@ -500,8 +504,11 @@ padding-bottom: 80px;
 .found__view {
   list-style: none;
   display: flex;
+  margin-left: 0;
+  padding-left: 0;
 }
 .view__icons {
+  display: flex;
   text-transform: none;
   padding: 17px 16px;
   border: 2px solid #E5E5E5;
@@ -624,6 +631,7 @@ padding-bottom: 80px;
   background-color: #82B3D3;
   border-radius: 4px;
 }
+
 .paganation__link:hover {
   background-color: #68A2CA;
 }
@@ -642,6 +650,9 @@ padding-bottom: 80px;
   width:  405px;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+.socials__link {
+  display: flex;
 }
 
 .socials__svg {
@@ -678,6 +689,7 @@ padding-bottom: 80px;
 
 .page-footer__developer {
   fill:#000000;
+  display: flex;
 }
 .page-footer__developer:hover{
   fill:#756157;
