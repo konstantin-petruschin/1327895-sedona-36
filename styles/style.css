@@ -642,14 +642,20 @@ height: 10px;
   background-color: #3F5E72;
   border-radius: 50%;
 }
+.filter__control-input:focus + .filter__control-mark {
+  border: 3px solid #83B3D3;
+}
+.filter__control-value {
+  position: relative;
+}
 
 
 .filter__control-text {
   position:absolute;
   color: rgba(0, 0, 0, 0.3);
-  font-family: inherit;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  font-weight: 700;
+
   right: 20px;
   top: 13px;
 
@@ -674,7 +680,9 @@ height: 10px;
 	appearance: textfield;
 }
 .input-text::-webkit-outer-spin-button,
-.input-text::-webkit-inner-spin-button,
+.input-text::-webkit-inner-spin-button {
+  appearance: none;
+}
 
 .input-text:hover {
   background-color: #E6E6E6;
@@ -714,6 +722,7 @@ height: 10px;
 .range__button:hover,
 .range__button:focus,
 .range__button:active {
+  outline: none;
   border-color: #83B3D3;
 }
 
@@ -780,6 +789,8 @@ height: 10px;
 
 
 }
+
+
 .found__select-control:hover {
   border-color: #68A2CA;
   }
