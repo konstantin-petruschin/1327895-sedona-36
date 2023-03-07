@@ -198,33 +198,45 @@
           <form action="https://echo.htmlacademy.ru/" method="post" class="modal__form">
             <label class="modal__group modal__group--full">
               <span class="modal__title">Дата заезда:</span>
-              <div class="modal__group-group">
+              <div class="modal__group-wrapper">
                 <input type="text" class="modal__data" value="27 апреля 2020">
-                <span class=" modal__message message-mistake">Мы не можем отправить вас в прошлое.</span>
+                <span class="modal__image"></span>
+                <span class=" modal__message modal__message--mistake">Мы не можем отправить вас в прошлое.</span>
               </div>
 
             </label>
             <label class="modal__group modal__group--full">
-              <span class="modal__exit-title">Дата выезда:</span>
-              <div class="modal__group-group">
+              <span class="modal__title">Дата выезда:</span>
+              <div class="modal__group-wrapper">
                 <input type="text" class="modal__data" value="1 сентября 2023">
+                <span class="modal__image"></span>
                 <span class="modal__message">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </label>
-            <label class="modal__group">
-              <span class="modal__input-text">Взрослые:</span>
-              <input type="number">
-              <button class="modal__button--add button"></button>
-              <button class="modal__button--deduct button"></button>
-            </label>
-            <label class="modal__group">
-              <span class="modal__input-text">Дети:</span>
-              <input type="number">
+            <label class="modal__group modal__group-big">
+              <span class="modal__title">Взрослые:</span>
+              <button class="modal__button--deduct button-quantity button" aria-label="Меньше.">
+                <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2"><path d="M0 0v2h14V0H0Z"/></svg>
+              </button>
+              <input class="modal__quantity" type="number" value="2" aria-label="Введите количество.">
+              <button class="modal__button--add button-quantity button" aria-label="Больше.">
+                <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"  viewBox="0 0 14 14"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
 
-              <button class="modal__button--add button"></button>
-              <button class="modal__button--deduct button"></button>
+              </button>
             </label>
-            <button class="modal__button">Найти</button>
+            <label class="modal__group modal__group-child">
+              <span class="modal__title">Дети:</span>
+              <button class="modal__button--deduct button-quantity button" aria-label="Меньше.">
+                <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2"><path d="M0 0v2h14V0H0Z"/></svg>
+              </button>
+              <input class="modal__quantity" type="number" value="2" aria-label="Введите количество.">
+              <button class="modal__button--add button-quantity button" aria-label="Больше.">
+                <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"  viewBox="0 0 14 14"><path  d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
+
+              </button>
+
+            </label>
+            <button class="modal__button-search button-blue button">Найти</button>
           </form>
         </section>
     </div>
