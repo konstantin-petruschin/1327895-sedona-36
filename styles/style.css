@@ -409,11 +409,6 @@ padding-bottom: 80px;
 
 
 
-.mailing__mail:focus {
-  background-color: #E6E6E6;
-  border: 3px solid #83B3D3;
-  outline: none;
-}
 
 
 .mailing__mail:focus:not(:placeholder-shown) {
@@ -427,6 +422,12 @@ border-color: transparent;
 }
 .mailing__mail:hover {
   background-color: #E6E6E6;
+}
+
+.mailing__mail:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+  outline: none;
 }
 
 
@@ -999,7 +1000,9 @@ height: 10px;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.paganation__link--current {
+.paganation__link--current,
+.paganation__link--current:focus,
+.paganation__link--current:hover {
   background-color: #F2F2F2;
   color: #000000;
 }
@@ -1101,12 +1104,19 @@ height: 10px;
   height: 15px;
   background-color:  #F2F2F2;
 }
-.modal__title {
+.modal__heading {
   text-align: left;
   margin-bottom: 64px;
 }
 .modal__form {
   display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-template-rows: repeat(8, auto);
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 48px;
+  column-gap: 88px;
+}
+.modal__group--full {
+  grid-column: 1 / -1 ;
+  display: flex;
+  align-items: center;
+
 }
