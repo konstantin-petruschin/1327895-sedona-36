@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <div class="container">
@@ -123,14 +124,14 @@
 
 
               <fieldset class="filter__group filter__price">
-                <legend class="filter__title">Стоимость, ₽</legend>
+                <legend class="filter__title">Стоимость, ₽:</legend>
                 <div class="filter__wrapper">
                   <label class="filter__control-value">
-                    <input class="filter__control-min input-text" name="min-price" value="0" type="number">
+                    <input class="filter__control-min input-text" name="min-price" placeholder="" value="0" type="number">
                     <span class="filter__control-text">от</span>
                   </label>
                   <label class="filter__control-value">
-                    <input class="filter__control-max input-text" name="max-price" value="9000" type="number">
+                    <input class="filter__control-max input-text" name="max-price" placeholder=""  value="9000" type="number">
                     <span class="filter__control-text">до</span>
                   </label>
                 </div>
@@ -166,7 +167,7 @@
           <h2 class="visually-hidden">Результаты поиска</h2>
           <div class="catalog__wrapper wrapper">
             <div class="catalog__results">
-              <p class="catalog__title main-heading">
+              <p class="catalog__title">
                 <span>Найдено гостиниц:</span>
                 <span>38</span>
               </p>
@@ -178,7 +179,7 @@
                   <option value="expensive">
                     Сначала дорогие
                   </option>
-                <option value="popular">Сначала популярные</option>
+                  <option value="popular">Сначала популярные</option>
                 </select>
               </div>
 
@@ -222,7 +223,7 @@
                   </div>
 
                   <div class="catalog__buttons">
-                    <a href="#" class="catalog__item-detailed catalog__item-button button-brown button">Подробнее</a>
+                    <a href="#" class="catalog__item-button button-brown button">Подробнее</a>
                     <button class="catalog__item-favorite catalog__item-button button-blue button">В избранное</button>
                   </div>
 
@@ -338,7 +339,7 @@
             <li class="paganation__item">
               <a href="#" class="paganation__link">4</a>
             </li>
-            <li class=" paganation__item" aria-label="Показать еще.">
+            <li class=" paganation__item" aria-label="Показать еще">
               <a href="#" class="paganation__link paganation__link--transporent">...</a>
             </li>
             <li class="paganation__item">
@@ -354,7 +355,10 @@
           <h2 class="mailing__heading main-heading">Подпишитесь на рассылку</h2>
           <p class="mailing__tagline main-tagline">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form action="https://echo.htmlacademy.ru/" method="post" class="mailing__form">
-              <input class="mailing__mail" type="text" value="" name="email" placeholder="Ваш e-mail">
+            <label for="mail" class="visually-hidden">
+              Ваша электоронная почта
+            </label>
+              <input class="mailing__mail" id="mail" type="text" value="" name="email" placeholder="Ваш e-mail">
             <button class="mailing__button button-blue button" type="submit">Подписаться</button>
           </form>
         </section>
