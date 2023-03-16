@@ -73,18 +73,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   flex-grow: 1;
 }
 
 .page-navigation__list {
+
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 .page-navigation__link {
+  display: block;
   padding: 20px 16px;
   position: relative;
   font-size: 20px;
@@ -106,9 +108,11 @@ z-index: 0;
 }
 
 .user-navigation {
+  max-width: 370px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  flex-shrink: 0;
 }
 
 .user-navigation__link {
@@ -324,8 +328,8 @@ z-index: 0;
 }
 
 .services__tagline {
-  margin-top: 0;
-  margin-bottom: 64px;
+  max-width: 700px;
+  margin: 0 auto 64px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -399,8 +403,8 @@ z-index: 0;
 }
 
 .search__tagline {
-  margin-top: 0;
-  margin-bottom: 64px;
+  max-width: 700px;
+  margin: 0 auto 64px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -451,7 +455,7 @@ z-index: 0;
 }
 
 .mailing__tagline {
-  width: 470px;
+  max-width: 470px;
   margin: 0 auto;
   margin-bottom: 53px;
   font-size: 22px;
