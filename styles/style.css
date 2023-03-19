@@ -595,6 +595,7 @@ border-color: transparent;
 .catalog__title {
   text-align: left;
   margin-bottom: 0;
+  max-width: 450px;
 }
 
 .catalog__filter {
