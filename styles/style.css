@@ -1110,14 +1110,7 @@ height: 20px;
   margin-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
-}
-
-.paganation__item {
-  margin-right: 8px;
-}
-
-.paganation__item:nth-last-child(1) {
-  margin-right: 0;
+  gap: 8px;
 }
 
 .paganation__link {
