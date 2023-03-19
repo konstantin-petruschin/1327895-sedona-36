@@ -64,7 +64,7 @@ body {
 .page-header__logo {
   width: 140px;
   height: 70px;
-  margin-right: 29px;
+  margin-right: 28px;
   margin-bottom: -11px;
   z-index: 1;
 }
@@ -167,7 +167,7 @@ z-index: 0;
   background-size: 100% auto;
   text-align: center;
   padding-top: 51px;
-  padding-bottom: 77px
+  padding-bottom: 76px
 }
 
 .main-container {
@@ -263,7 +263,7 @@ z-index: 0;
 }
 
 .advantages__block .advantages__text {
-  padding: 101px 85px 89px;
+  padding: 102px 85px 89px;
 }
 
 .advantages__item-image {
@@ -412,22 +412,22 @@ z-index: 0;
 .main-index__search {
   text-align: center;
   padding-top: 96px;
-  padding-bottom: 95px;
+  padding-bottom: 96px;
 }
 
 .search__tagline {
-  max-width: 592px;
+  width: 592px;
   margin: 0 auto;
-  margin-bottom: 53px;
+  margin-bottom: 55px;
 }
 
 .search__button {
-  padding: 17px 51px;
+  padding: 15px 51px;
   font-size: 20px;
 }
 
 .main-index__mailing {
-  padding-top: 96px;
+  padding-top: 97px;
   padding-bottom: 104px;
   background-color: #68A2CA;
   background-image: url("../images/subscribe.jpg");
@@ -451,13 +451,13 @@ z-index: 0;
   text-transform: uppercase;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .mailing__tagline {
   max-width: 470px;
   margin: 0 auto;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -523,7 +523,7 @@ border-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 45px;
+  padding-top: 46px;
   padding-bottom: 30px;
 }
 
@@ -687,7 +687,7 @@ border-color: transparent;
 
 .filter__title {
   padding-left: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -709,10 +709,10 @@ border-color: transparent;
 
 .filter__control-mark {
   position: absolute;
-  top: 1px;
-  left: 1px;
-  width: 15px;
-  height: 15px;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
   background-color: #ffffff;
   border: 3px solid transparent;
   border-radius: 4px;
@@ -748,10 +748,10 @@ height: 20px;
 .filter__control [type="radio"]:checked + .filter__control-mark::before {
   position: absolute;
   content:"";
-  top: 18%;
-  left: 18%;
-  width: 10px;
-  height: 10px;
+  top: 2px;
+  left: 2px;
+  width: 13px;
+  height: 13px;
   background-color: #3F5E72;
   border-radius: 50%;
 }
@@ -892,8 +892,7 @@ height: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 22px;
 }
 
 .catalog__title {
@@ -924,7 +923,7 @@ height: 20px;
   appearance: none;
   padding: 12px 20px;
   padding-right: 40px;
-  background: url("..//images/select.svg") no-repeat right 18px center;
+  background: url("..//images/select.svg") no-repeat right 20px center;
 }
 
 .found__select-control:hover {
@@ -951,12 +950,12 @@ height: 20px;
 }
 
 .found__view {
-  max-width: 180px;
+  max-width: 165px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  gap: 6px;
-  margin: 0;
+  gap: 8px;
+  margin-left: 0;
   padding-left: 0;
 }
 
@@ -989,7 +988,7 @@ height: 20px;
 .catalog__list-placement {
   list-style: none;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   padding-bottom: 40px;
   padding-left: 0;
   border-bottom: 1px solid #E6E6E6;
@@ -1014,7 +1013,7 @@ height: 20px;
 
 .catalog__item-image {
  width: 100%;
- margin-bottom: 12px;
+ margin-bottom: 13px;
 }
 
 .catalog__item-title {
@@ -1084,7 +1083,7 @@ height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   border-radius: 4px;
-  padding: 9px 22px 8px 22px;
+  padding: 9px 22px 8px 23px;
   background-color: #F2F2F2;
   color: #333333;
 }
@@ -1110,7 +1109,14 @@ height: 20px;
   margin-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+}
+
+.paganation__item {
+  margin-right: 8px;
+}
+
+.paganation__item:nth-last-child(1) {
+  margin-right: 0;
 }
 
 .paganation__link {
@@ -1160,7 +1166,7 @@ height: 20px;
 
 .catalog__mailing {
   text-align: center;
-  padding-top: 97px;
+  padding-top: 96px;
   padding-bottom: 104px;
 }
 
